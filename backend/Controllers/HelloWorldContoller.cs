@@ -11,4 +11,10 @@ public class HelloWorldController : ControllerBase
         var name = "Patrick";
         return $"Hello world {name}";
     }
+
+     [HttpGet("Thankyou")]
+    public IActionResult Thankyou(string name)
+    {
+        return Ok($"Thank you {name}");
+    }
 }
